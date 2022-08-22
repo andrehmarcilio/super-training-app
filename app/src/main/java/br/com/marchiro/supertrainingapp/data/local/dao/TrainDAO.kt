@@ -6,7 +6,7 @@ import br.com.marchiro.supertrainingapp.model.Train
 @Dao
 interface TrainDAO {
 
-    @Query("SELECT * FROM train")
+    @Query("SELECT * FROM train WHERE disable = 0")
     suspend fun getAllTrain(): List<Train>
 
     @Query("SELECT * FROM train WHERE trainId = :id")
