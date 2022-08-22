@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Super Training</string>
+    <string name="main_fab_description">Button to create a new Training</string>
+    <string name="training_image_description">Training Image</string>
+    <string name="title_til_hint">Titulo</string>
+    <string name="description_til_hint">Descrição</string>
+    <string name="duration_til_hint">Duração</string>
+    <string name="btn_save_text">Salvar</string>
+    <string name="refresh_btn_text">Carregar</string>
+    <string name="url_da_imagem">URL da imagem</string>
+    <string name="editar">Editar</string>
+    <string name="deletar">deletar</string>
+    <string name="exercise_image_description">Exercise Image</string>
+    <string name="exercise_list_fab_description">Button to create a new exercise</string>
+    <string name="add_exercise">Adicionar Exercício</string>
+    <string name="save">Salvar</string>
+    <string name="reorder_list_icon">Reorder list icon</string>
+</resources>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp"
+    android:layout_margin="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:id="@+id/main_rv_item_iv"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/main_rv_item_iv"
+            android:contentDescription="@string/training_image_description"
+            app:layout_constraintWidth_percent="0.3"
+            tools:src="@tools:sample/backgrounds/scenic"
+            android:scaleType="centerCrop"
+           />
+
+        <TextView
+            android:id="@+id/main_rv_item_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:fontFamily="sans-serif-black"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/main_rv_item_iv"
+            app:layout_constraintTop_toTopOf="parent"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/black"
+            tools:text="Titulo" />
+
+        <TextView
+            android:id="@+id/main_rv_item_subtitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="6dp"
+            app:layout_constraintBottom_toTopOf="@id/main_rv_item_duration"
+            app:layout_constraintEnd_toEndOf="@id/main_rv_item_title"
+            app:layout_constraintStart_toStartOf="@id/main_rv_item_title"
+            app:layout_constraintTop_toBottomOf="@id/main_rv_item_title"
+            android:maxLines="1"
+            android:ellipsize="end"
+            tools:text="Treino de Perna" />
+
+        <TextView
+            android:id="@+id/main_rv_item_duration"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/main_rv_item_title"
+            app:layout_constraintStart_toStartOf="@id/main_rv_item_title"
+            app:layout_constraintTop_toBottomOf="@id/main_rv_item_subtitle"
+            android:maxLines="1"
+            android:ellipsize="end"
+            tools:text="45 min" />
+
+
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
